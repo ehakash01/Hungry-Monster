@@ -3,7 +3,13 @@ const searchFood = () => {
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`
     fetch(url)
         .then(response => response.json())
-        .then(data => displayFood(data.meals));
+        .then(data => displayFood(data.meals))
+        .catch(error => displayError('Something went wrong!! Please try again later!'));
+}
+
+const displayError = error => {
+    const errorTag = document.getElementById("errorMessage");
+    errorTag.innerText = error;
 }
 
 const displayFood = food => {
