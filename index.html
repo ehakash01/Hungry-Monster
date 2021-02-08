@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster - Assignment</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <div class="container">
+
+
+            <!-- menu start -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                      <img class="img-fluid w-50" src="images/logo.png" alt="logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active p-3" aria-current="page" href="#">Home</a>
+                      <a class="nav-link p-3" href="#">About</a>
+                      <a class="nav-link p-3" href="#">Recipes</a>
+                      <a class="nav-link p-3" href="#">Blog</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              <!-- menu end -->
+
+
+              <!-- search menu start -->
+              <form class="form d-flex justify-content-center py-5">
+                <input id="searchInput" class="form-control w-50 p-2" type="search" placeholder="Search" aria-label="Search">
+                <button onclick="searchFunctionality()" id="SearchButton" class="btn btn-lg btn-outline-primary" type="submit">Search</button>
+              </form>
+              <!-- search menu end -->
+
+              <!-- main body part start  -->
+              <div id="foodDetails">
+
+              </div>
+              <div id="foodDiv">
+
+              </div>
+              <!-- main body part end  -->
+        </div>
+    </section>
+
+
+    <!-- js link  -->
+    <script src="script.js"></script>
+    <!-- bootstrap link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
