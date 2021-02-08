@@ -17,12 +17,14 @@
 .food-title{
     font-size: 30px;
     color: rgba(0, 0, 0, 0.74);
+    padding: 10px;
 }
 #foodDetails{
     width: 50%;
     margin: 0 auto;
 }
 #foodDetails img{
-    width: 70%;
+    width: 50%;
     display: block;
+    margin-bottom: 10px;
 }
